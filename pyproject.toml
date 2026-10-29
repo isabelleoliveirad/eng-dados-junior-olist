@@ -1,0 +1,14 @@
+[project]
+name = "eng-dados-junior-olist"
+version = "0.1.0"
+description = "Pipeline autoral Olist: atrasos, frete e avaliações"
+requires-python = ">=3.10,<4"
+dependencies = ["duckdb>=1.1,<2", "requests>=2.32,<3"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.coverage.run]
+source = ["pipeline"]
+omit = ["pipeline/executar.py"]  # CLI externa: coberta pelo smoke test no Colab

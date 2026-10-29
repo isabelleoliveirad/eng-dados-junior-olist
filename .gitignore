@@ -1,0 +1,12 @@
+__pycache__/
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+.ipynb_checkpoints/
+*.pyc
+.env
+# Fontes baixadas e banco locais, não enviar dados comprimidos por acidente
+/data/source/
+/data/*.duckdb
+/data/*.duckdb.wal
